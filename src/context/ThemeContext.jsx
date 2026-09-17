@@ -15,3 +15,13 @@ export function ThemeProvider({ children }) {
 
   return <ThemeContext.Provider value={{ theme, toggleTheme }}>{children}</ThemeContext.Provider>;
 }
+
+// Hook
+
+export function useTheme() {
+  const context = useContext(ThemeContext);
+  if (!context) {
+    throw new Error("This must be used within a ThemeProvider");
+  }
+  return context;
+}
