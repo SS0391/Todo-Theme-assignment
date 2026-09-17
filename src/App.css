@@ -1,0 +1,31 @@
+/*Global colors*/
+
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --btn-bg: #333333;
+  --btn-text: #ffffff;
+  --border-color: #444444;
+}
+
+.app-light {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --btn-bg: #e0e0e0;
+  --btn-text: #000000;
+  --border-color: #ccc;
+}
+
+.app-container {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  padding: 20px;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
