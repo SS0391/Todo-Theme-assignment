@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 const TodosContext = createContext();
 
@@ -23,4 +23,10 @@ export function TodoProvider({ children }) {
   const removeTodo = (id) => {
     setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== id));
   };
+
+  return <TodosContext.Provider value={{ todos, addTodo, toggleTodo, removeTodo }}>{children}</TodosContext.Provider>;
+}
+
+export function useTodos() {
+  return useContext(TodosContext);
 }
