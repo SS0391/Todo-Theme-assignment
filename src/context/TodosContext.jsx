@@ -19,4 +19,8 @@ export function TodoProvider({ children }) {
   const toggleTodo = (id) => {
     setTodos((prevTodos) => prevTodos.map((todo) => (todo.id === id ? { ...todo, done: !todo.done } : todo)));
   };
+
+  const removeTodo = (id) => {
+    setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== id));
+  };
 }
