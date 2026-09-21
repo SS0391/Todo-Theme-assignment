@@ -1,6 +1,7 @@
 import "./App.css";
 import ThemeToggle from "./components/ThemeToggle/ThemeToggle.jsx";
 import { TodoForm } from "./components/TodoForm/TodoForm.jsx";
+import { TodoList } from "./components/TodoList/TodoList";
 import { useTheme } from "./context/ThemeContext.jsx";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <h1>useEffect Assignment Theme and Todo List</h1>
       <ThemeToggle />
       <TodoForm />
+      <TodoList />
     </div>
   );
 }
