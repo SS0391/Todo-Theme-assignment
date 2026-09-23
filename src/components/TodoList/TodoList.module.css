@@ -6,3 +6,27 @@
   flex-direction: column;
   gap: 14px;
 }
+
+.todoText {
+  flex: 1;
+  font-size: 15px;
+  word-break: break-word; /*So bigger word do not take over the entire page on small devices*/
+  color: var(--text-main);
+  padding-right: 20px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.completed {
+  opacity: 0.7;
+}
+
+.completed .todoText {
+  text-decoration: line-through;
+  color: rgb(201, 200, 200);
+}

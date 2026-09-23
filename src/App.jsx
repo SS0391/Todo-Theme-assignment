@@ -10,7 +10,7 @@ function App() {
     <div className={`app-container ${theme === "light" ? "app-light" : ""}`}>
       <ThemeToggle />
       <div className="app-card">
-        <h1>useEffect Assignment Theme and Todo List</h1>
+        <h1>Todo List</h1>
         <TodoForm />
         <TodoList />
       </div>
