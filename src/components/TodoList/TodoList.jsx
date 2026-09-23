@@ -8,7 +8,7 @@ export function TodoList() {
       {todos.map((todo) => (
         <li key={todo.id} className={`${styles.todoItem} ${todo.done ? styles.completed : ""}`}>
           <input type="checkbox" checked={todo.done} onChange={() => toggleTodo(todo.id)} className={styles.checkbox} />
-          <span className={styles.checkbox}>{todo.txt}</span>
+          <span className={styles.checkbox}>{todo.text}</span>
           <button onClick={() => removeTodo(todo.id)} className={styles.deleteBtn}>
             X
           </button>
