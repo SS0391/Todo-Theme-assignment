@@ -8,10 +8,12 @@ function App() {
   const { theme } = useTheme();
   return (
     <div className={`app-container ${theme === "light" ? "app-light" : ""}`}>
-      <h1>useEffect Assignment Theme and Todo List</h1>
       <ThemeToggle />
-      <TodoForm />
-      <TodoList />
+      <div className="app-card">
+        <h1>useEffect Assignment Theme and Todo List</h1>
+        <TodoForm />
+        <TodoList />
+      </div>
     </div>
   );
 }

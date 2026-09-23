@@ -20,7 +20,7 @@
   background-color: var(--bg-color);
   color: var(--text-color);
   min-height: 100vh;
-  padding: 20px;
+  padding: 40px 20px;
   font-family:
     system-ui,
     -apple-system,
@@ -28,4 +28,28 @@
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.app-card {
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  border-radius: 14px;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
