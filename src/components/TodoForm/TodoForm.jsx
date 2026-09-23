@@ -4,7 +4,7 @@ import styles from "./TodoForm.module.css";
 
 export function TodoForm() {
   const [txt, setTxt] = useState("");
-  const { addTodo } = useTodos;
+  const { addTodo } = useTodos();
 
   const handleSubmit = (e) => {
     e.preventDefault();
