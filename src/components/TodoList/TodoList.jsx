@@ -1,6 +1,7 @@
 import { useTodos } from "../../context/TodosContext";
 import styles from "./TodoList.module.css";
 export function TodoList() {
+  // get data, functions directly from the context without props
   const { todos, toggleTodo, removeTodo } = useTodos();
 
   return (

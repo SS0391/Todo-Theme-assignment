@@ -21,6 +21,7 @@ export function ThemeProvider({ children }) {
 export function useTheme() {
   const context = useContext(ThemeContext);
   if (!context) {
+    // a safety check for the ThemeContext
     throw new Error("This must be used within a ThemeProvider");
   }
   return context;

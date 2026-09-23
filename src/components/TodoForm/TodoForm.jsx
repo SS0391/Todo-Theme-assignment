@@ -3,13 +3,16 @@ import { useTodos } from "../../context/TodosContext";
 import styles from "./TodoForm.module.css";
 
 export function TodoForm() {
+  // the local state for the input text
   const [txt, setTxt] = useState("");
+
+  // get the global todo(addTodo) from the context with not using props
   const { addTodo } = useTodos();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     addTodo(txt);
-    setTxt("");
+    setTxt(""); // reset the local input state
   };
 
   return (
