@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 const TodosContext = createContext();
 
 export function TodoProvider({ children }) {
-  const [todos, setTodos] = useState([{ id: 1, text: "Learn some React", done: false }]);
+  const [todos, setTodos] = useState([]);
 
   const addTodo = (text) => {
     if (!text.trim()) return;
