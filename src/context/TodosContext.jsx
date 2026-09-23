@@ -5,11 +5,11 @@ const TodosContext = createContext();
 export function TodoProvider({ children }) {
   const [todos, setTodos] = useState([{ id: 1, text: "Learn some React", done: false }]);
 
-  const addTodo = (txt) => {
-    if (!txt.trim()) return;
+  const addTodo = (text) => {
+    if (!text.trim()) return;
     const newTodo = {
       id: Date.now(),
-      text: txt,
+      text: text,
       done: false,
     };
 
