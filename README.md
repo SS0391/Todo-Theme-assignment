@@ -1,16 +1,41 @@
-# React + Vite
+# React Oppgave 3 useContext()
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
 
-Currently, two official plugins are available:
+**Global Todo List** Add, toggle, completion status, remove item(todo) from any component
+**Global Theme Toggler** Switch between dark and light mode click the button "change theme"
+**No prop drilling** All state and data are consumed directly by the components that need them
+**CSS Module** Used to style the different jsx files
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack and Key concepts
 
-## React Compiler
+**React / Vite**
+**React Context API** Used createContext and useContext to share state globally-
+**Custom hooks** created useTodos and useThemes for cleaner components consumption.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting started
 
-## Expanding the ESLint configuration
+Follow these steps to run the project locally:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository:**
+
+   ```bash
+   git clone <your-repository-url>
+   ```
+
+2. **Navigate to the project folder:**
+
+   ```bash
+   cd <project-folder-name>
+   ```
+
+3. **Install the dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
